@@ -8,9 +8,9 @@
                     <div class="card-body">
                         <p class="card-text">{{ infos.description }} </p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"> Température : {{infos.temperature }} </li>
+                            <li class="list-group-item"> Température : {{infos.temperature }} °C </li>
                             <li class="list-group-item">
-                                Durée de fonctionnement : {{infos.operatingtime }}
+                                Durée de fonctionnement : {{infos.operatingtime }} h/jour
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{infos.operatingtime }} %</div>
                                 </div>
@@ -41,6 +41,7 @@
                 axios.get('/module/' + this.id)
                     .then( ({data}) => {
                         this.infos = data;
+                        console.log(data);
                     })
             }
         },

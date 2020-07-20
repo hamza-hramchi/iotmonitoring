@@ -59,8 +59,8 @@
                                                 <input v-model="form.operatingtime" name="operatingtime" type="number" class="form-control">
                                             </div>
                                             <div class="col-md-6 form-group">
-                                                <label for="data">Data</label>
-                                                <input v-model="form.dataM" name="data" type="number" class="form-control">
+                                                <label for="dataM">Data</label>
+                                                <input v-model="form.dataM" name="dataM" type="number" class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group">

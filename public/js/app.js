@@ -2308,6 +2308,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.get('/module/' + this.id).then(function (_ref) {
         var data = _ref.data;
         _this.infos = data;
+        console.log(data);
       });
     }
   },
@@ -43682,7 +43683,7 @@ var render = function() {
                           ]),
                           _vm._v(" "),
                           _c("div", { staticClass: "col-md-6 form-group" }, [
-                            _c("label", { attrs: { for: "data" } }, [
+                            _c("label", { attrs: { for: "dataM" } }, [
                               _vm._v("Data")
                             ]),
                             _vm._v(" "),
@@ -43696,7 +43697,7 @@ var render = function() {
                                 }
                               ],
                               staticClass: "form-control",
-                              attrs: { name: "data", type: "number" },
+                              attrs: { name: "dataM", type: "number" },
                               domProps: { value: _vm.form.dataM },
                               on: {
                                 input: function($event) {
@@ -43819,14 +43820,16 @@ var render = function() {
             _vm._v(" "),
             _c("ul", { staticClass: "list-group list-group-flush" }, [
               _c("li", { staticClass: "list-group-item" }, [
-                _vm._v(" Température : " + _vm._s(_vm.infos.temperature) + " ")
+                _vm._v(
+                  " Température : " + _vm._s(_vm.infos.temperature) + " °C "
+                )
               ]),
               _vm._v(" "),
               _c("li", { staticClass: "list-group-item" }, [
                 _vm._v(
                   "\n                            Durée de fonctionnement : " +
                     _vm._s(_vm.infos.operatingtime) +
-                    "\n                            "
+                    " h/jour\n                            "
                 ),
                 _c("div", { staticClass: "progress" }, [
                   _c(
