@@ -1,3 +1,14 @@
+<h2 align="center"> Les modules nécessaires <h2>
+    <ul>
+        <li> npm install && npm run dev </li>
+        <li> npm install bootstrap </li>
+        <li> npm install vue </li>
+        <li> npm install vue-router </li>
+        <li> npm install tailwindcss </li>
+        <li> npm install vform </li>
+        <li> npm install sweetalert2 </li>
+    </ul>
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
